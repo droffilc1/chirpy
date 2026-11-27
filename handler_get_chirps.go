@@ -16,6 +16,7 @@ func (cfg *apiConfig) handlerGetChirps(w http.ResponseWriter, r *http.Request) {
 	}
 
 	chirps := []Chirp{}
+
 	for _, c := range dbChirps {
 		chirps = append(chirps, Chirp{
 			ID:        c.ID,
